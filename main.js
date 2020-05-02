@@ -44,8 +44,8 @@ const divide = (numA, numB) => {
 // / to get a quotient,
 
 const modulus = (numA, numB) => {
-  constant modulus = |numA, numB|
-  return %
+  const modulus  = (numA % numB);
+  return modulus
 }
 // and % to get a remainder.
 
@@ -72,11 +72,11 @@ const equals = () => {
     break;
     case "subtraction": putResultInElement(subtract(firstNum, secondNum)) 
     break;
-    case "multiplication": multiply(firstNum, secondNum) 
+    case "multiplication": putResultInElement(multiply(firstNum, secondNum))
     break;
-    case "division": console.log(divide(firstNum, secondNum)) 
+    case "division": putResultInElement(divide(firstNum, secondNum)) 
     break;
-    case "modulus": console.log(modulus(firstNum, secondNum)) 
+    case "modulus": putResultInElement(modulus(firstNum, secondNum)) 
     break;
     default: "Choose an operation"
   }
